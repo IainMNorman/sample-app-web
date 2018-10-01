@@ -52,6 +52,9 @@
                         success: function(res){
                             console.log('join meeting success');
                             document.getElementById('nav-tool').style.display = 'none';
+                        },
+                        error: function(err){
+                            console.log(err);   
                         }
                     }
                 );
